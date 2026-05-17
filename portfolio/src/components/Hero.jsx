@@ -52,6 +52,7 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-4 flex-wrap text-sm text-gray-300">
+            <span className="bg-white/10 px-4 py-2 rounded-full">Java</span>
             <span className="bg-white/10 px-4 py-2 rounded-full">React.js</span>
             <span className="bg-white/10 px-4 py-2 rounded-full">
               Spring Boot
