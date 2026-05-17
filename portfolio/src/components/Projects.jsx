@@ -1,6 +1,4 @@
-// Projects.jsx
-
-import projects from "../data/projects";
+import projects from "../data/Projects";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
