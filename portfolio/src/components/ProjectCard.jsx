@@ -1,5 +1,3 @@
-// ProjectCard.jsx
-
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
@@ -12,8 +10,10 @@ const ProjectCard = ({ project }) => {
       transition={{ duration: 0.8 }}
       className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-all duration-500"
     >
-      <div className="h-56 bg-gradient-to-br from-blue-600 to-slate-900 flex items-center justify-center">
-        <h2 className="text-5xl font-black text-white">{project.title}</h2>
+      <div className="h-56 bg-gradient-to-br from-blue-600 to-slate-900 flex items-center justify-center px-4">
+        <h2 className="text-4xl md:text-5xl font-black text-white text-center">
+          {project.title}
+        </h2>
       </div>
 
       <div className="p-8">
@@ -33,23 +33,18 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="space-y-3 mb-8">
-          <div className="flex items-center gap-3 text-gray-300">
-            <span className="text-green-400">✔</span>
-            JWT Authentication & Authorization
-          </div>
-
-          <div className="flex items-center gap-3 text-gray-300">
-            <span className="text-green-400">✔</span>
-            REST API Integration
-          </div>
-
-          <div className="flex items-center gap-3 text-gray-300">
-            <span className="text-green-400">✔</span>
-            Responsive Full Stack UI
-          </div>
+          {project.features.map((feature) => (
+            <div
+              key={feature}
+              className="flex items-center gap-3 text-gray-300"
+            >
+              <span className="text-green-400">✔</span>
+              {feature}
+            </div>
+          ))}
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex flex-wrap gap-5">
           <a
             href={project.live}
             target="_blank"

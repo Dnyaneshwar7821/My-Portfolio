@@ -28,9 +28,10 @@ const Hero = () => {
 
           <p className="text-gray-400 text-base leading-7 max-w-md mb-10">
             Java Full Stack Developer with a B.E. in Computer Engineering,
-            skilled in building scalable web applications using Spring Boot and
-            React.js. Proficient in secure REST APIs, JWT authentication, and
-            MySQL-based full-stack application development.
+            focused on building scalable full-stack web applications using
+            Spring Boot, React.js, and MySQL. Strong in REST API development,
+            JWT authentication, responsive UI design, and end-to-end application
+            development.
           </p>
 
           <div className="flex flex-wrap gap-5 mb-10">

@@ -17,12 +17,12 @@ const Projects = () => {
           <h2 className="text-5xl font-black text-center mb-6">Projects</h2>
 
           <p className="text-center text-gray-400 text-lg mb-16">
-            Full-stack applications built using React.js, Spring Boot, MySQL,
-            and REST APIs.
+            Applications built using React.js, JavaScript, Spring Boot, MySQL,
+            REST APIs, and modern frontend tooling.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-3 gap-10">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
